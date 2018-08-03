@@ -265,7 +265,14 @@ Small Device Styles
   h6 { font-size: 12px; }
   code, pre { min-width: 240px; max-width: 320px; font-size: 11px; } }
 
-/* nav stylez */
+
+/* styling the tagline/description/subtitle */
+.notepad-blog-description {
+  color: #f2f2f2;
+}
+
+/* nav stylez (from hmfaysal/Notepad) */
+/* how much of this is actually necessary? */
 
 .notepad-blog-menu {
   padding-top: 0;
@@ -355,7 +362,8 @@ Small Device Styles
           text-align: left;
           padding: 0; }
           .notepad-blog-menu ul li a {
-            color: black;
+            /* this is what changes the color of the nav bar text! */
+            color: #f2f2f2;
             display: inline-block;
             border-bottom: 0.1875rem solid transparent;
             width: auto;
