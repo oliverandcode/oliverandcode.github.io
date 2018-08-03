@@ -3,12 +3,13 @@ layout: default
 title: home
 ---
 
-08-02-2018
+title: Today's Update (part one)
+date: 2018-08-02 12:00:00
 
 ### TODO:
 - [x] figure out basic layouts and configuration
 - [ ] add contact/about page and image
-- [ ] start blog
+- [x] start blog
 - [ ] add project pages
 - [ ] design and upload favicon/logo
 
@@ -22,7 +23,9 @@ title: home
 
 &&&
 
-08-02-2018
+title: Today's Update (part two)
+date: 2018-08-02 13:00:00
+
 
 ### What I did:
 * made page header link back to home
@@ -34,11 +37,12 @@ title: home
 - [ ] make and upload a logo (check what size is used and where file is located in Notepad)
 - [x] fix how the header displays
 - [ ] make blog, projects, about links go somewhere
-- [ ] put these updates into _posts
+- [x] put these updates into _posts
 
 &&&
 
-08-03-2018
+title: Today's Update (part one)
+date: 2018-08-03 13:00:00
 
 ### What I did:
 * fixed the spacing of the header title (commented out Slate title formatting in default.html, added Notepad title formatting back)
@@ -50,3 +54,17 @@ title: home
 - [x] change color of nav links (can barely see them!)
 - [x] change color of subtitle/description in header
 - [x] add placeholder logo
+
+
+&&&
+
+title: Today's Update (part two)
+date: 2018-08-03 16:30:00
+
+### What I did:
+* moved updates to _posts directory
+* added some defaults in _config
+
+### TODO:
+- [ ] how do you access _posts??? figure that out
+- [ ] create blog.md (or blog.html?) and format it (see hmfaysal/Notepad/featured.html) IN A NEW GIT BRANCH THO

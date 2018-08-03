@@ -19,3 +19,18 @@ links:
     url: /projects
   - title: about
     url: /about
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "default"
+      author: "Oliver Ayers"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
