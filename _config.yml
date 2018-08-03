@@ -3,4 +3,18 @@ theme: jekyll-theme-slate
 title: Oliver & Co(de)
 description: a dev, his diary, and code
 show_downloads: false
-google_analytics:
+# google_analytics:
+
+# nav links
+# if external add external: true
+links:
+  - title: home
+    url: /
+    external: false
+    # icon: home
+  - title: blog
+    url: /blog
+  - title: projects
+    url: /projects
+  - title: about
+    url: /about
