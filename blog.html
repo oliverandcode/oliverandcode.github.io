@@ -1,0 +1,12 @@
+---
+layout: default
+permalink: /blog/
+title: blog
+description: the blog posts
+---
+
+<ul>
+    {% for post in site.posts %}
+        <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.url }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>
+    {% endfor %}
+</ul>
