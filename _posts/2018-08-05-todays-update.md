@@ -18,3 +18,6 @@ date: 2018-08-05 12:00:00
 - [x] put github(s?) in about page (branch: about)
 - [ ] make "next" and "previous" links for each post page - I think this requires making a new layout for posts, so go ahead and make post.html in _layouts and copy default.html, then tweak as needed? (branch: blog)
 - [ ] display date on each post page (branch: blog)
+- [ ] make header title link back to index (home) not just ... the current page ... (branch: ???)
+- [ ] add "Dear Dev Diary" to blog page (branch: blog)
+- [ ] change text of "blog" link to "dev diary"?? (branch: blog)
