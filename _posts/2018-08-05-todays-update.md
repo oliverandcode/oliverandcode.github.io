@@ -8,9 +8,10 @@ date: 2018-08-05 12:00:00
 * fixed image src in about - it displays now!
 * added both GitHub links in about
 * added title to blog page
+* fixed blog post title formatting! it's actual words now
 
 ### TODO:
-- [ ] fix blog post title list formatting (branch: blog)
+- [x] fix blog post title list formatting (branch: blog)
 - [x] why won't image display on about page? fix! (branch: about)
 - [ ] not causing issues right now as far as I can tell, but why are _site changes still being tracked after putting _site into .gitignore?
 - [ ] no menu/nav bar displayed on mobile (new branch: mobile? mobilemenu?)
