@@ -9,8 +9,8 @@ date: 2018-08-04 10:00:00
 * made projects pages (just says "coming soon!")
 
 ### TODO:
-- [x] make projects link go somewhere
-- [x] make contact/about page
-- [ ] put contact info in footer
-- [ ] fix about page image
-- [ ] fix blog post list formatting
+- [x] make projects link go somewhere (branch: projects)
+- [x] make contact/about page (branch: about)
+- [ ] put contact info in footer (new branch: footer)
+- [ ] fix about page image (branch: about? is this an issue with the link though? idk if the way i linked it can work when running locally ... maybe i should make it a relative link instead?)
+- [ ] fix blog post list formatting (branch: blog)

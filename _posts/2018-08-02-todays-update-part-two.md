@@ -13,6 +13,6 @@ date: 2018-08-02 13:00:00
 ### TODO:
 - [ ] make and upload a logo (check what size is used and where file is located in Notepad)
 - [x] fix how the header displays
-- [x] make blog, projects, about links go somewhere
+- [x] make blog, projects, about links go somewhere (branch: blog, projects, about)
 - [x] put these updates into _posts
 

@@ -6,10 +6,12 @@ date: 2018-08-02 12:00:00
 
 ### TODO:
 - [x] figure out basic layouts and configuration
-- [ ] add contact/about page and image
-- [x] start blog
-- [ ] add project pages
+- [x] add contact/about page and image (branch: about)
+    - [ ] update: still needs image to actually DISPLAY though (branch: about)
+- [x] start blog (branch: blog/master)
+- [x] add projects page (branch: projects)
 - [ ] design and upload favicon/logo
+    - [x] upload placeholder logo
 
 ### What I did:
 * figured out the Very Basic Basics of layouts and configuration (for the Slate theme at least)
