@@ -16,4 +16,4 @@ date: 2018-08-03 16:30:00
     - most recent blog post(s)
     - contact info
     - welcome blurb
-- [ ] make projects link go somewhere
+- [x] make projects link go somewhere

@@ -7,4 +7,4 @@ description: links to my projects
 
 ### Projects
 
-Under construction!
+Coming Soon!
