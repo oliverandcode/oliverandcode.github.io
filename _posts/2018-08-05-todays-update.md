@@ -23,11 +23,11 @@ date: 2018-08-05 12:00:00
 - [x] put github(s?) in about page (branch: about)
 - [ ] make "next" and "previous" links for each post page - I think this requires making a new layout for posts, so go ahead and make post.html in _layouts and copy default.html, then tweak as needed? (branch: blog)
 - [x] display title and date on each post page (branch: blog)
-- [ ] make header title link back to index (home) not just ... the current page ... (branch: ???)
+- [x] make header title link back to index (home) not just ... the current page ... (branch: ???)
 - [x] add "Dear Dev Diary" to blog page (branch: blog)
 - [x] change text of "blog" link to "dev diary"?? (branch: blog)
     - [x] NO CHANGE IT BACK I HATE IT
 - [ ] make blog post title list format PRETTIER - look at hmfaysal's css again I guess (branch: blog)
 - [x] design and upload logo/favicon (branch: logo)
     - [ ] still need to figure out how to get the favicon to actually DISPLAY (the link in the head is somehow ... not working ...)
-- [ ] so much repeated code between layouts - start using _includes for head, header, footer, etc (new branch: includes)
+- [x] so much repeated code between layouts - start using _includes for head, header, footer, etc (new branch: includes)
