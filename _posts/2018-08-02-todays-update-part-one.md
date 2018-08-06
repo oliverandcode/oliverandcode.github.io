@@ -9,7 +9,7 @@ date: 2018-08-02 12:00:00
     - [x] update: still needs image to actually DISPLAY though (branch: about)
 - [x] start blog (branch: blog/master)
 - [x] add projects page (branch: projects)
-- [ ] design and upload favicon/logo
+- [x] design and upload favicon/logo
     - [x] upload placeholder logo
 
 ### What I did:

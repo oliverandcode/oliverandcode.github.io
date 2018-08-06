@@ -10,6 +10,8 @@ date: 2018-08-05 12:00:00
 * added title to blog page
 * fixed blog post title list formatting! it's actual words now
 * made title, date, and author display on each post page! added post.html in _layouts and changed _config defaults for posts from "default" to "post"
+* designed a logo! uploaded said logo! got logo to display in header!
+* designed a favicon! uploaded said favicon! did not get favicon to display... :(
 
 ### TODO:
 - [x] fix blog post title list formatting (branch: blog)
@@ -26,3 +28,6 @@ date: 2018-08-05 12:00:00
 - [x] change text of "blog" link to "dev diary"?? (branch: blog)
     - [x] NO CHANGE IT BACK I HATE IT
 - [ ] make blog post title list format PRETTIER - look at hmfaysal's css again I guess (branch: blog)
+- [x] design and upload logo/favicon (branch: logo)
+    - [ ] still need to figure out how to get the favicon to actually DISPLAY (the link in the head is somehow ... not working ...)
+- [ ] so much repeated code between layouts - start using _includes for head, header, footer, etc (new branch: includes)
