@@ -8,7 +8,8 @@ date: 2018-08-05 12:00:00
 * fixed image src in about - it displays now!
 * added both GitHub links in about
 * added title to blog page
-* fixed blog post title formatting! it's actual words now
+* fixed blog post title list formatting! it's actual words now
+* made title, date, and author display on each post page! added post.html in _layouts and changed _config defaults for posts from "default" to "post"
 
 ### TODO:
 - [x] fix blog post title list formatting (branch: blog)
@@ -19,8 +20,9 @@ date: 2018-08-05 12:00:00
 - [ ] put contact info/social media links in footer (new branch: footer)
 - [x] put github(s?) in about page (branch: about)
 - [ ] make "next" and "previous" links for each post page - I think this requires making a new layout for posts, so go ahead and make post.html in _layouts and copy default.html, then tweak as needed? (branch: blog)
-- [ ] display date on each post page (branch: blog)
+- [x] display title and date on each post page (branch: blog)
 - [ ] make header title link back to index (home) not just ... the current page ... (branch: ???)
 - [x] add "Dear Dev Diary" to blog page (branch: blog)
 - [x] change text of "blog" link to "dev diary"?? (branch: blog)
     - [x] NO CHANGE IT BACK I HATE IT
+- [ ] make blog post title list format PRETTIER - look at hmfaysal's css again I guess (branch: blog)

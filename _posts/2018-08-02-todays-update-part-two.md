@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Today's Update (part two)
 date: 2018-08-02 13:00:00
 ---

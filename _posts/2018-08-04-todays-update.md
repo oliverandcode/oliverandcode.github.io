@@ -13,4 +13,4 @@ date: 2018-08-04 10:00:00
 - [x] make contact/about page (branch: about)
 - [ ] put contact info in footer (new branch: footer)
 - [x] fix about page image (branch: about? is this an issue with the link though? idk if the way i linked it can work when running locally ... maybe i should make it a relative link instead?)
-- [ ] fix blog post list formatting (branch: blog)
+- [x] fix blog post list formatting (branch: blog)
