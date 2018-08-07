@@ -7,7 +7,7 @@ description: about page
 
 ### Oliver Ayers is a software developer!
 
-![Oliver at his desk](/assets/images/oliver-at-desk.jpg)
+![Oliver at his desk](https://s3-us-west-1.amazonaws.com/oliverandcode.com/oliver-at-desk.jpg)
 
 Hi, my name is Oliver Ayers, and this is my professional website! Here you can find my coding blog/dev diary, my projects, and my contact information. 
 
