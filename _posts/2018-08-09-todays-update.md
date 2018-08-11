@@ -8,4 +8,4 @@ I may have been going about fixing the mobile menu in the wrong way. I haven't u
 However, this approach has not been very successful. I need to do some learning.
 
 ### TODO:
-- [ ] fix mobile menu
+- [x] fix mobile menu

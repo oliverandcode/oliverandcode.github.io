@@ -23,7 +23,9 @@ Anyway, I signed up for AWS and followed [this tutorial](https://learnetto.com/b
 - hosted about page image on AWS S3!
 
 ### TODO:
-- [ ] reorganize css to see if that helps the mobile menu problem (branch: mobile-menu)
+- [x] reorganize css to see if that helps the mobile menu problem (branch: mobile-menu)
+    - UPDATE: it didn't help, but it did make things easier to read, which is good
+    - for future problems like this, are there code formatting tools/programs I can use instead of going through badly formatted css files line by line???? there must be
 - [x] research - podcast website & hosting, RSS feed
 
 ### Relevant links:

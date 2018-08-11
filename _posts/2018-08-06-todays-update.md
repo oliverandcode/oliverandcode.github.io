@@ -12,7 +12,7 @@ date: 2018-08-06 10:00:00
 ### TODO:
 - [x] improve code formatting, use _includes: head, header, footer, etc (branch: includes)
 - [x] make header title link to root url not current url (new branch? header?)
-- [ ] make menu display on mobile (new branch: mobile-menu)
+- [x] make menu display on mobile (new branch: mobile-menu)
 - [ ] put contact/social media in footer (new branch: footer)
 - [ ] make "next" and "previous" buttons for blog posts (branch: blog)
 - [ ] improve readability of blog page list (branch: blog)

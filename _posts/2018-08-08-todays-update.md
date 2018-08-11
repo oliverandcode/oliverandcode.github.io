@@ -9,4 +9,4 @@ date: 2018-08-08 12:00:00
 - final result: no change
 
 ### TODO:
-- [ ] fix mobile menu
+- [x] fix mobile menu
