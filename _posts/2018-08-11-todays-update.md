@@ -14,4 +14,4 @@ I figured out how to test it locally, which was what I really needed. It's not p
 - [ ] get rid of unnecessary commented out code (branch: cleanup?)
 - [ ] rename menu function in _includes/scripts.html (branch: cleanup?)
 - [ ] previous/next buttons in blog (branch: blog)
-- [ ] next steps on podcast website?
+- [x] next steps on podcast website?

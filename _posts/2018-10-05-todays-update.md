@@ -7,6 +7,6 @@ date: 2018-10-05 09:30:00
 - Organized some of the STG metadata defaults in _config, in preparation for creating an RSS feed
 
 ### TODO:
-- [ ] generate RSS feed for podcast site - probably need to buy domain name first, but let's see
-- [ ] new project idea: make a template podcast site, in case I do another podcast, or want to make a website for someone else's podcast
-- [ ] small todo: add favicon (make favicon)
+- [x] generate RSS feed for podcast site - probably need to buy domain name first, but let's see
+- [x] new project idea: make a template podcast site, in case I do another podcast, or want to make a website for someone else's podcast
+- [x] small todo: add favicon (make favicon)

@@ -7,4 +7,4 @@ date: 2018-10-12 11:00:00
 - What am I doing wrong
 
 ### TODO:
-- [ ] fix it
+- [x] fix it

@@ -8,4 +8,4 @@ I changed some styles! And the website is now [live](https://survivorteamgo.gith
 Now I need to figure out the RSS feed.
 
 ### TODO:
-- [ ] generate RSS feed
+- [x] generate RSS feed

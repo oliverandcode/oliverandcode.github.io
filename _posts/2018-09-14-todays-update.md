@@ -7,5 +7,5 @@ I linked up all 8 episodes of STG to individual episode pages on the STG website
 
 ### TODO:
 - [x] make STG work for mobile
-- [ ] generate RSS feed
-- [ ] move repetitive episode metadata to defaults in _config
+- [x] generate RSS feed
+- [x] move repetitive episode metadata to defaults in _config

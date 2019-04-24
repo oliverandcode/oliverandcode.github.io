@@ -16,6 +16,6 @@ date: 2018-08-06 10:00:00
 - [ ] put contact/social media in footer (new branch: footer)
 - [ ] make "next" and "previous" buttons for blog posts (branch: blog)
 - [ ] improve readability of blog page list (branch: blog)
-- [ ] figure out why favicon isn't showing up (branch: logo)
-- [ ] make blog page title "blog" again and just put "Dear Dev Diary..." in a h# element (branch: blog)
-- [ ] decide what to put on the home page
+- [x] figure out why favicon isn't showing up (branch: logo)
+- [x] make blog page title "blog" again and just put "Dear Dev Diary..." in a h# element (branch: blog)
+- [x] decide what to put on the home page
