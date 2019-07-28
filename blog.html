@@ -7,8 +7,11 @@ description: the blog posts
 
 <h3>{{ page.title }}</h3>
 
-<ul>
+<table>
     {% for post in site.posts %}
-        <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: " | %B %d, %Y" }}</time></span></a></article></li>
+    <tr>
+        <td><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></td>
+        <td><span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: " %B %d, %Y" }}</time></span></td>
+    </tr>
     {% endfor %}
-</ul>
+</table>
