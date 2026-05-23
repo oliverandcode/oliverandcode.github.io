@@ -3,8 +3,13 @@ layout: default
 title: home
 ---
 
-### Oliver Ayers is a software developer!
+## Oliver Ayers
+### Software Engineer
 
-![Oliver at his desk](https://s3-us-west-1.amazonaws.com/oliverandcode.com/oliver-at-desk.jpg)
+![Oliver at his computer](assets/images/computer-cat.jpg)
 
-Hi, my name is Oliver Ayers, and this is my professional website! Here you can find my [coding blog/dev diary]({{site.url}}/blog), my [projects]({{site.url}}/projects), and my [contact information]({{site.url}}/about). 
+github: [oliverandcode](https://github.com/oliverandcode)
+
+linkedin: [Oliver Ayers](https://www.linkedin.com/in/oliver-ayers-090870a3/)
+
+Welcome to my cool new updated website! Here you can find my [coding blog]({{site.url}}/blog) and my [projects]({{site.url}}/projects).
