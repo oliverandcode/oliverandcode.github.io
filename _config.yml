@@ -1,9 +1,11 @@
 theme: jekyll-theme-slate
 
 title: Oliver & Co(de)
-description: a dev, his diary, and code
+description: coding blog, project portfolio, and whimsy
 logo: oliverandcode-logo.png
 show_downloads: false
+# toggle url when developing locally!
+# url: /
 url: http://www.oliverandcode.com/
 
 # nav links
@@ -34,3 +36,6 @@ defaults:
       type: "pages"
     values:
       layout: "default"
+
+plugins:
+  - jekyll-figure
