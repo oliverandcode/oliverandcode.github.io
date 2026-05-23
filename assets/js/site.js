@@ -7,11 +7,13 @@ const SITE = {
   title:   "Software Engineer",
   github:  "https://github.com/oliverandcode",
   linkedin:"https://www.linkedin.com/in/oliver-ayers-090870a3/",
-  bio: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. I build
-thoughtful software at the intersection of performance and developer
-experience — with a soft spot for clean APIs, well-named variables,
-and the occasional whimsical side project.`,
+  bio: `
+  I'm a full stack software engineer based in Los Angeles. Python is my comfort zone, but I also work with TypeScript/React, Java, and modern frontend tools. I am invested in thoughtful architecture and clear communication. Good collaboration means solving the right problem, not just the obvious one.
+  
+  My background is unconventional and primarily self-directed, with a highly condensed computer science foundation through LaunchCode in 2017. The first project I built solo was a performance art piece about truth acceptance. I still find myself drawn to projects with a little whimsy and curiosity about the human condition.
+  
+  Later, I spent three years at an aerospace startup, where I grew from temporary intern to full-time engineer with responsibility for major features and our automated testing infrastructure. A stable app is a well-oiled machine, and it stays that way through rigorous test suites that grow alongside the codebase they protect.
+  `,
 };
 
 const POSTS = [
