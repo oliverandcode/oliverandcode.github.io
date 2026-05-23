@@ -9,35 +9,35 @@ const SITE = {
   linkedin:"https://www.linkedin.com/in/oliver-ayers-090870a3/",
   bio: `
   I'm a full stack software engineer based in Los Angeles. Python is my comfort zone, but I also work with TypeScript/React, Java, and modern frontend tools. I am invested in thoughtful architecture and clear communication. Good collaboration means solving the right problem, not just the obvious one.
-  
+
   My background is unconventional and primarily self-directed, with a highly condensed computer science foundation through LaunchCode in 2017. The first project I built solo was a performance art piece about truth acceptance. I still find myself drawn to projects with a little whimsy and curiosity about the human condition.
-  
+
   Later, I spent three years at an aerospace startup, where I grew from temporary intern to full-time engineer with responsibility for major features and our automated testing infrastructure. A stable app is a well-oiled machine, and it stays that way through rigorous test suites that grow alongside the codebase they protect.
   `,
 };
 
 const POSTS = [
-  {
-    slug: "template-blog-entry",
-    title: "Title of Blog Entry",
-    date: "2030-01-01",
-    preview: "First sentence or two of blog entry. Or a summary.",
-    body: `<h2>Subtitle or header of a section</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.
-Phasellus euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl,
-nec aliquam nisl nisl sit amet nisl. Sed do eiusmod tempor incididunt ut
-labore et dolore magna aliqua.</p>
-<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-<h2>The three-sentence test</h2>
-<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste
-natus error sit voluptatem accusantium doloremque laudantium.</p>
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-sequi nesciunt.</p>`,
-  },
+//   {
+//     slug: "template-blog-entry",
+//     title: "Title of Blog Entry",
+//     date: "2030-01-01",
+//     preview: "First sentence or two of blog entry. Or a summary.",
+//     body: `<h2>Subtitle or header of a section</h2>
+// <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.
+// Phasellus euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl,
+// nec aliquam nisl nisl sit amet nisl. Sed do eiusmod tempor incididunt ut
+// labore et dolore magna aliqua.</p>
+// <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+// ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+// in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+// <h2>The three-sentence test</h2>
+// <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+// deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste
+// natus error sit voluptatem accusantium doloremque laudantium.</p>
+// <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+// fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+// sequi nesciunt.</p>`,
+//   },
   {
     slug: "code-coaching-session-0",
     title: "Code Coaching: Session 0",
@@ -83,112 +83,112 @@ Off to a good start! Next time I am going to ask her to explain what this code s
 </p>
 `,
   },
-  {
-    slug: "typescript-utility-types",
-    title: "TypeScript Utility Types I Wish I'd Learned Earlier",
-    date: "2025-08-19",
-    preview: "Partial, Pick, Omit — sure. But what about Awaited, Parameters, and the lesser-known gems that will change how you model your domain?",
-    body: `<h2>Beyond the basics</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. TypeScript ships
-with more than 20 built-in utility types and most tutorials stop at the
-obvious four.</p>
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab
-illo inventore veritatis et quasi architecto beatae vitae.</p>
-<pre><code>type ApiResponse&lt;T&gt; = {
-  data: T;
-  status: number;
-  ok: boolean;
-};</code></pre>
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-sequi nesciunt.</p>`,
-  },
-  {
-    slug: "git-aliases-that-stick",
-    title: "The Git Aliases That Stuck After Five Years",
-    date: "2025-07-07",
-    preview: "I've tried dozens of git aliases. These are the six that survived every machine migration and team onboarding session.",
-    body: `<h2>Less typing, more shipping</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A good alias
-disappears into muscle memory. A bad one is a liability every time someone
-looks over your shoulder.</p>
-<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-ut aliquip ex ea commodo consequat. Here are the survivors from my
-<code>.gitconfig</code>.</p>`,
-  },
-  {
-    slug: "code-review-etiquette",
-    title: "Code Review Isn't About the Code",
-    date: "2025-05-22",
-    preview: "The best code reviewers I've worked with share one trait — they review the person, not just the diff. A few principles I try to bring to every PR.",
-    body: `<h2>The human on the other side</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Every comment
-you leave is read by a person who spent hours on that code. That context
-changes everything.</p>
-<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
-  },
-  {
-    slug: "local-first-apps",
-    title: "Local-First Software: Why I'm Betting on It",
-    date: "2025-03-11",
-    preview: "The cloud ate everything. Now a quiet movement is pushing back — with CRDTs, SQLite in the browser, and a different idea of where your data should live.",
-    body: `<h2>Offline is a feature</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. There's a
-philosophical argument and a practical one for local-first software.
-I find both compelling.</p>
-<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-dolore eu fugiat nulla pariatur.</p>`,
-  },
-  {
-    slug: "postgres-jsonb-patterns",
-    title: "Five Postgres JSONB Patterns Worth Knowing",
-    date: "2025-01-28",
-    preview: "You've heard that JSONB in Postgres is powerful. Here are the five query patterns that show up in real production code.",
-    body: `<h2>Beyond SELECT *</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. JSONB operators
-unlock a surprising amount of power without ever leaving SQL.</p>`,
-  },
-  {
-    slug: "on-technical-writing",
-    title: "On Technical Writing as a Superpower",
-    date: "2024-11-09",
-    preview: "The engineers with outsized impact I've observed all share one habit — they write clearly about technical topics. Here's how I've tried to cultivate that.",
-    body: `<h2>Writing is thinking</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>`,
-  },
-  {
-    slug: "css-custom-properties",
-    title: "CSS Custom Properties Are More Powerful Than You Think",
-    date: "2024-09-14",
-    preview: "Beyond theming: custom properties as stateful design tokens, animation levers, and component APIs — with examples you can use today.",
-    body: `<h2>Variables with superpowers</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>`,
-  },
-  {
-    slug: "debugging-mindset",
-    title: "The Debugging Mindset: How to Think When Nothing Makes Sense",
-    date: "2024-07-01",
-    preview: "Debugging is a skill. Here's the mental framework I've built over years of staring at logs, bisecting commits, and eventually finding the absurd root cause.",
-    body: `<h2>Embrace the mystery</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>`,
-  },
-  {
-    slug: "monorepos-for-small-teams",
-    title: "Monorepos Aren't Just for Big Tech",
-    date: "2024-04-20",
-    preview: "A two-person team can benefit from a monorepo setup. Here's the minimal configuration that's worked for us — without the enterprise overhead.",
-    body: `<h2>Shared fate, shared code</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>`,
-  },
-  {
-    slug: "http-caching-explained",
-    title: "HTTP Caching, Explained Simply",
-    date: "2024-02-08",
-    preview: "Cache-Control headers confuse almost everyone. This is my attempt to explain them in plain English, with diagrams and concrete examples.",
-    body: `<h2>The headers that matter</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>`,
-  },
+//   {
+//     slug: "typescript-utility-types",
+//     title: "TypeScript Utility Types I Wish I'd Learned Earlier",
+//     date: "2025-08-19",
+//     preview: "Partial, Pick, Omit — sure. But what about Awaited, Parameters, and the lesser-known gems that will change how you model your domain?",
+//     body: `<h2>Beyond the basics</h2>
+// <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. TypeScript ships
+// with more than 20 built-in utility types and most tutorials stop at the
+// obvious four.</p>
+// <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+// accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab
+// illo inventore veritatis et quasi architecto beatae vitae.</p>
+// <pre><code>type ApiResponse&lt;T&gt; = {
+//   data: T;
+//   status: number;
+//   ok: boolean;
+// };</code></pre>
+// <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+// fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+// sequi nesciunt.</p>`,
+//   },
+//   {
+//     slug: "git-aliases-that-stick",
+//     title: "The Git Aliases That Stuck After Five Years",
+//     date: "2025-07-07",
+//     preview: "I've tried dozens of git aliases. These are the six that survived every machine migration and team onboarding session.",
+//     body: `<h2>Less typing, more shipping</h2>
+// <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A good alias
+// disappears into muscle memory. A bad one is a liability every time someone
+// looks over your shoulder.</p>
+// <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+// ut aliquip ex ea commodo consequat. Here are the survivors from my
+// <code>.gitconfig</code>.</p>`,
+//   },
+//   {
+//     slug: "code-review-etiquette",
+//     title: "Code Review Isn't About the Code",
+//     date: "2025-05-22",
+//     preview: "The best code reviewers I've worked with share one trait — they review the person, not just the diff. A few principles I try to bring to every PR.",
+//     body: `<h2>The human on the other side</h2>
+// <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Every comment
+// you leave is read by a person who spent hours on that code. That context
+// changes everything.</p>
+// <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+//   },
+//   {
+//     slug: "local-first-apps",
+//     title: "Local-First Software: Why I'm Betting on It",
+//     date: "2025-03-11",
+//     preview: "The cloud ate everything. Now a quiet movement is pushing back — with CRDTs, SQLite in the browser, and a different idea of where your data should live.",
+//     body: `<h2>Offline is a feature</h2>
+// <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. There's a
+// philosophical argument and a practical one for local-first software.
+// I find both compelling.</p>
+// <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+// dolore eu fugiat nulla pariatur.</p>`,
+//   },
+//   {
+//     slug: "postgres-jsonb-patterns",
+//     title: "Five Postgres JSONB Patterns Worth Knowing",
+//     date: "2025-01-28",
+//     preview: "You've heard that JSONB in Postgres is powerful. Here are the five query patterns that show up in real production code.",
+//     body: `<h2>Beyond SELECT *</h2>
+// <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. JSONB operators
+// unlock a surprising amount of power without ever leaving SQL.</p>`,
+//   },
+//   {
+//     slug: "on-technical-writing",
+//     title: "On Technical Writing as a Superpower",
+//     date: "2024-11-09",
+//     preview: "The engineers with outsized impact I've observed all share one habit — they write clearly about technical topics. Here's how I've tried to cultivate that.",
+//     body: `<h2>Writing is thinking</h2>
+// <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>`,
+//   },
+//   {
+//     slug: "css-custom-properties",
+//     title: "CSS Custom Properties Are More Powerful Than You Think",
+//     date: "2024-09-14",
+//     preview: "Beyond theming: custom properties as stateful design tokens, animation levers, and component APIs — with examples you can use today.",
+//     body: `<h2>Variables with superpowers</h2>
+// <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>`,
+//   },
+//   {
+//     slug: "debugging-mindset",
+//     title: "The Debugging Mindset: How to Think When Nothing Makes Sense",
+//     date: "2024-07-01",
+//     preview: "Debugging is a skill. Here's the mental framework I've built over years of staring at logs, bisecting commits, and eventually finding the absurd root cause.",
+//     body: `<h2>Embrace the mystery</h2>
+// <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>`,
+//   },
+//   {
+//     slug: "monorepos-for-small-teams",
+//     title: "Monorepos Aren't Just for Big Tech",
+//     date: "2024-04-20",
+//     preview: "A two-person team can benefit from a monorepo setup. Here's the minimal configuration that's worked for us — without the enterprise overhead.",
+//     body: `<h2>Shared fate, shared code</h2>
+// <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>`,
+//   },
+//   {
+//     slug: "http-caching-explained",
+//     title: "HTTP Caching, Explained Simply",
+//     date: "2024-02-08",
+//     preview: "Cache-Control headers confuse almost everyone. This is my attempt to explain them in plain English, with diagrams and concrete examples.",
+//     body: `<h2>The headers that matter</h2>
+// <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>`,
+//   },
 ];
 
 /* ================================================
