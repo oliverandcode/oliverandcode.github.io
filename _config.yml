@@ -4,6 +4,7 @@ title: Oliver & Co(de)
 description: coding blog, project portfolio, and whimsy
 logo: oliverandcode-logo.png
 show_downloads: false
+# disable url when developing locally!
 url: http://www.oliverandcode.com/
 
 # nav links
