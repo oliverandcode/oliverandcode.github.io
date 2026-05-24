@@ -1,0 +1,27 @@
+# =====================================================
+#  CATEGORY REGISTRY
+#  Add a new category here before using it in a post.
+#  slug:  used in URLs and post front matter
+#  label: displayed in the UI
+# =====================================================
+
+- slug: engineering
+  label: Engineering
+
+- slug: tools
+  label: Tools & Workflow
+
+- slug: writing
+  label: Technical Writing
+
+- slug: web
+  label: Web & CSS
+
+- slug: databases
+  label: Databases
+
+- slug: career
+  label: Career
+
+- slug: open-source
+  label: Open Source

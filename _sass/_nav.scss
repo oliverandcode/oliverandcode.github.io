@@ -1,0 +1,152 @@
+// =====================================================
+//  NAV / HEADER CHROME
+//  Dark walnut bar — visually distinct from page content.
+//  Nav links show icon + label when space allows;
+//  icon only on narrow viewports.
+// =====================================================
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: $chrome-bg;
+  border-bottom: 1px solid $chrome-border;
+}
+
+.header-inner {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 28px;
+  height: $chrome-height;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+// Site title + tagline block
+.site-identity {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.site-title {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: .04em;
+  color: $chrome-text-hi;
+  line-height: 1;
+}
+
+.site-tagline {
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: $terra;
+  line-height: 1;
+}
+
+// Nav links
+.nav-links {
+  display: flex;
+  gap: 4px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: $chrome-text;
+  border-radius: $radius;
+  transition: color .2s, background .2s;
+  text-decoration: none;
+  white-space: nowrap;
+
+  // Icon — always present
+  .nav-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    opacity: .7;
+    transition: opacity .2s;
+  }
+
+  // Label — hidden on narrow
+  .nav-label { display: inline; }
+
+  &:hover, &.active {
+    color: $chrome-text-hi;
+    background: rgba(255,255,255,.07);
+    .nav-icon { opacity: 1; }
+  }
+
+  &.active { color: $chrome-text-hi; }
+}
+
+// Mobile hamburger
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+
+  span {
+    display: block;
+    width: 20px; height: 1.5px;
+    background: $chrome-text;
+    transition: .2s;
+  }
+}
+
+// ── Responsive ───────────────────────────────────────
+
+// Mid — icon + label still fits, but reduce padding
+@media (max-width: 520px) {
+  .nav-links a {
+    padding: 6px 8px;
+    .nav-label { display: none; }     // icon only
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .nav-toggle { display: flex; }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    position: absolute;
+    top: $chrome-height; left: 0; right: 0;
+    background: $chrome-bg;
+    border-bottom: 1px solid $chrome-border;
+    padding: 8px 16px 16px;
+
+    &.open { display: flex; }
+
+    a {
+      padding: 11px 8px;
+      border-bottom: 1px solid $chrome-border;
+      border-radius: 0;
+      width: 100%;
+
+      // Show both icon + label in the open menu
+      .nav-label { display: inline !important; }
+
+      &:last-child { border-bottom: none; }
+    }
+  }
+}

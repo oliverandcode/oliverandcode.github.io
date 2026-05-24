@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+
+      <!-- Left: text -->
+      <div>
+        <div class="hero-eyebrow fade-up">{{ site.job_title }}</div>
+        <h1 class="hero-name fade-up fade-up-1">{{ site.author.name }}</h1>
+        <p class="hero-jobtitle fade-up fade-up-1">{{ site.job_title }}</p>
+
+        <div class="hero-bio fade-up fade-up-2">{{ content }}</div>
+
+        <div class="fade-up fade-up-3">
+          {% include pro-links.html %}
+        </div>
+      </div>
+
+      <!-- Right: photo -->
+      <div class="hero-photo-wrap fade-up fade-up-4">
+        <div class="hero-photo-frame">
+          <img
+            src="{{ '/assets/img/placeholder.jpg' | relative_url }}"
+            alt="{{ site.about_photo.alt_text }}"
+            title="{{ site.about_photo.title }}"
+          />
+        </div>
+        <p class="photo-caption">
+          {{ site.about_photo.caption }}
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Recent posts teaser -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Recent Posts</h2>
+      <div class="section-line"></div>
+      <a class="btn" href="{{ '/blog/' | relative_url }}">All posts →</a>
+    </div>
+    <div class="blog-grid">
+      {% assign recent = site.posts | limit: 3 %}
+      {% for post in recent %}
+        {% include blog-card.html post=post %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

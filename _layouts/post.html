@@ -1,29 +1,47 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en-US' }}">
+---
+layout: default
+---
+<div class="container">
 
-  <head>
-    {% include head.html %}
-  </head>
-
-  <body>
-
-      {% include header.html %}
-
-      <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-          <h5><span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></span></h5>
-          <h2>{{ page.title }}</h2>
-          <h5>by {{ page.author }}</h5>
-          <hr />
-        {{ content }}
-        {{ post.id }}
-      </section>
+  <header class="post-header">
+    <a class="btn post-back" href="{{ '/blog/' | relative_url }}">← Back to Blog</a>
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-meta">
+      <span>{{ page.date | date: "%B %-d, %Y" }}</span>
+      <span>by {{ page.author | default: site.default_author }}</span>
+      {% if page.categories and page.categories != empty %}
+        <div class="post-meta__cats">
+          Filed under:&nbsp;
+          {% for cat_slug in page.categories %}
+            {% assign cat = site.data.categories | where: "slug", cat_slug | first %}
+            {% if cat %}
+              <a href="{{ '/blog/category/' | append: cat_slug | append: '/' | relative_url }}">{{ cat.label }}</a>{% unless forloop.last %},&nbsp;{% endunless %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
     </div>
+  </header>
 
-    {% include footer.html %}
+  <article class="post-body">{{ content }}</article>
 
-    {% include scripts.html %}
+  <nav class="post-nav" aria-label="Post navigation">
+    <div>
+      {% if page.previous %}
+        <a class="post-nav__item" href="{{ page.previous.url | relative_url }}">
+          <div class="post-nav__label">← Previous</div>
+          <div class="post-nav__title">{{ page.previous.title }}</div>
+        </a>
+      {% endif %}
+    </div>
+    <div>
+      {% if page.next %}
+        <a class="post-nav__item post-nav__item--next" href="{{ page.next.url | relative_url }}">
+          <div class="post-nav__label">Next →</div>
+          <div class="post-nav__title">{{ page.next.title }}</div>
+        </a>
+      {% endif %}
+    </div>
+  </nav>
 
-  </body>
-</html>
+</div>

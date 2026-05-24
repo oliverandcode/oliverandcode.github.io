@@ -1,0 +1,147 @@
+// =====================================================
+//  ABOUT PAGE
+// =====================================================
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 56px;
+  align-items: start;
+  padding: 64px 0;
+
+  @media (max-width: $bp-mobile) {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 48px 0;
+  }
+}
+
+.about-body {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.85;
+  color: $ink-mid;
+
+  p { margin-bottom: 18px; }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: $ink;
+    margin: 36px 0 12px;
+    letter-spacing: -.01em;
+  }
+}
+
+// Column: profile photo + dog photo stacked
+.about-photos {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.about-photo-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.about-photo-frame {
+  position: relative;
+
+  img {
+    width: 100%;
+    border-radius: $radius;
+    display: block;
+  }
+
+  &--profile img { aspect-ratio: 4 / 5; object-fit: cover; object-position: top; }
+  &--dog     img { aspect-ratio: 1 / 1; object-fit: cover; }
+}
+
+// Dog photo flip easter egg
+// Clicking .flip-card toggles .is-flipped
+.flip-card {
+  perspective: 900px;
+  cursor: pointer;
+}
+
+.flip-card__inner {
+  position: relative;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform .55s cubic-bezier(.4, 0, .2, 1);
+
+  &.is-flipped { transform: rotateY(180deg); }
+}
+
+.flip-card__front,
+.flip-card__back {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: $radius;
+  overflow: hidden;
+}
+
+.flip-card__front { width: 100%; }
+
+.flip-card__back {
+  position: absolute;
+  inset: 0;
+  transform: rotateY(180deg);
+  background: $matcha-pale;
+  border: 1px solid $matcha;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  gap: 10px;
+}
+
+.flip-card__back-emoji {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.flip-card__back-text {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: $ink-mid;
+}
+
+.flip-card__back-hint {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: $matcha-dark;
+}
+
+.about-photo-caption {
+  font-size: 11px;
+  font-weight: 400;
+  color: $ink-light;
+  text-align: center;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.flip-hint {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: $matcha;
+  text-align: center;
+}
+
+.about-name {
+  font-size: 28px;
+  font-weight: 300;
+  color: $ink;
+  margin-bottom: 28px;
+  letter-spacing: -.01em;
+}

@@ -1,0 +1,91 @@
+---
+layout: default
+---
+<div class="container">
+  <div class="blog-layout">
+
+    <!-- ── Main: headline + cards ──────────────────── -->
+    <div>
+      <h1 class="blog-headline">{{ site.blog_headline }}</h1>
+
+      {% if page.active_category %}
+        <div class="category-filter-header">
+          <div class="category-filter-label">Filtered by category</div>
+          <div class="category-filter-title">
+            {% assign cat = site.data.categories | where: "slug", page.active_category | first %}
+            {{ cat.label }}
+          </div>
+        </div>
+        {% assign filtered = site.posts | where_exp: "p", "p.categories contains page.active_category" %}
+        <div class="blog-grid">
+          {% for post in filtered %}
+            {% include blog-card.html post=post %}
+          {% endfor %}
+        </div>
+        <p style="margin-top:32px;">
+          <a class="btn" href="{{ '/blog/' | relative_url }}">← All posts</a>
+        </p>
+      {% else %}
+        <div class="blog-grid">
+          {% for post in paginator.posts %}
+            {% include blog-card.html post=post %}
+          {% endfor %}
+        </div>
+
+        <!-- Pagination -->
+        {% if paginator.total_pages > 1 %}
+          <nav class="pagination" aria-label="Blog pages">
+            {% if paginator.previous_page %}
+              <a class="page-btn" href="{{ paginator.previous_page_path | relative_url }}">←</a>
+            {% else %}
+              <span class="page-btn" aria-disabled="true">←</span>
+            {% endif %}
+
+            {% for i in (1..paginator.total_pages) %}
+              {% if i == paginator.page %}
+                <span class="page-btn active">{{ i }}</span>
+              {% elsif i == 1 %}
+                <a class="page-btn" href="{{ '/blog/' | relative_url }}">{{ i }}</a>
+              {% else %}
+                <a class="page-btn" href="{{ site.paginate_path | relative_url | replace: ':num', i }}">{{ i }}</a>
+              {% endif %}
+            {% endfor %}
+
+            {% if paginator.next_page %}
+              <a class="page-btn" href="{{ paginator.next_page_path | relative_url }}">→</a>
+            {% else %}
+              <span class="page-btn" aria-disabled="true">→</span>
+            {% endif %}
+          </nav>
+        {% endif %}
+      {% endif %}
+    </div>
+
+    <!-- ── Sidebar: categories ──────────────────────── -->
+    <aside class="categories-sidebar" aria-label="Post categories">
+      <div class="categories-sidebar__title">Categories</div>
+      <ul class="category-list" role="list">
+        <li>
+          <a href="{{ '/blog/' | relative_url }}"
+             {% unless page.active_category %}class="active"{% endunless %}>
+            All posts
+            <span class="category-count">{{ site.posts | size }}</span>
+          </a>
+        </li>
+        {% for cat in site.data.categories %}
+          {% assign count = site.posts | where_exp: "p", "p.categories contains cat.slug" | size %}
+          {% if count > 0 %}
+            <li>
+              <a href="{{ '/blog/category/' | append: cat.slug | append: '/' | relative_url }}"
+                 {% if page.active_category == cat.slug %}class="active"{% endif %}>
+                {{ cat.label }}
+                <span class="category-count">{{ count }}</span>
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </aside>
+
+  </div>
+</div>

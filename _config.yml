@@ -15,6 +15,19 @@ author:
   linkedin: "https://linkedin.com/in/oliver-ayers-090870a3"
   email:    "oliverdayers@gmail.com"
 
+about_photo:
+  alt_text: "An orange cat at his computer"
+  title: "Oliver at his computer"
+  caption: "Oliver at his computer"
+
+dog_photo:
+  aria_label: "Click to reveal!"
+  alt_text: "A large white dog stares suspiciousy into a mirror abandoned on the sidewalk"
+  title: "Roll over!"
+  caption: "My dog Cheerio, reflecting on life"
+  flip_hint: "Roll over!"
+  flip_back_hint: "Click to see my dog again"
+
 # ── Job title shown large on home page ───────────────
 job_title: "Software Engineer"
 

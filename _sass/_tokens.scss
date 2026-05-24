@@ -1,0 +1,40 @@
+// =====================================================
+//  DESIGN TOKENS  —  single source of truth
+//  Change a value here and it ripples everywhere.
+// =====================================================
+
+// ── Page colors ──────────────────────────────────────
+$cream:      #F5F0E8;   // main page background
+$cream-2:    #EDE8DF;   // subtle surface, card hover
+$cream-3:    #DDD7CC;   // borders, dividers
+
+$ink:        #2C2416;   // primary text
+$ink-mid:    #6B5E4A;   // secondary text
+$ink-light:  #9C8E7C;   // timestamps, labels
+
+// ── Header / footer colors (dark block) ──────────────
+$chrome-bg:      #2C2416;   // warm dark walnut
+$chrome-border:  #3E3324;   // subtle inner border
+$chrome-text:    #C8BFB0;   // muted cream — readable on dark
+$chrome-text-hi: #F5F0E8;   // full cream — active / hover
+
+// ── Accent colors ────────────────────────────────────
+$matcha:      #7A8C6E;
+$matcha-dark: #536148;
+$matcha-pale: #EBF0E6;
+
+$terra:       #C4714A;
+$terra-dark:  #9E5535;
+$terra-pale:  #F5E9E3;
+
+// ── Typography ───────────────────────────────────────
+// Jost everywhere. Code falls back to browser default monospace.
+$font-sans: 'Jost', system-ui, sans-serif;
+
+// ── Layout ───────────────────────────────────────────
+$max-width:      880px;
+$chrome-height:  60px;   // header / nav bar height
+$radius:         2px;
+
+// ── Breakpoints ──────────────────────────────────────
+$bp-mobile: 680px;
