@@ -40,6 +40,7 @@ url:     "https://oliverandcode.github.io"
 blog_headline: "The Poetical Science" # H1 shown on the blog index
 default_author: "Oliver Ayers" # used when a post omits `author:`
 
+# TODO: fix issue with pagination (but retain modularization)
 # ── Pagination ───────────────────────────────────────
 paginate:      10
 paginate_path: "/blog/page:num/"
