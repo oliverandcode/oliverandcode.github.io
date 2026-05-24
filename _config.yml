@@ -1,41 +1,62 @@
-theme: jekyll-theme-slate
+# =====================================================
+#  SITE SETTINGS
+#  Edit this file to configure the whole site.
+#  These variables are available everywhere as site.*
+# =====================================================
 
-title: Oliver & Co(de)
-description: coding blog, project portfolio, and whimsy
-logo: oliverandcode-logo.png
-show_downloads: false
-# toggle url when developing locally!
-# url: /
-url: http://www.oliverandcode.com/
+# ── Identity ─────────────────────────────────────────
+title:       "Oliver & Co(de)" # site name
+tagline:     "code + commentary + curiosity" # 3–5 words shown in the header
+description: "A software engineer's notes on building things." # NOTE: where does this display? it's referenced in _includes/head.html
 
-# nav links
-# if external add external: true
-links:
-  - title: home
-    url: /
-    external: false
-    # icon: home
-  - title: blog
-    url: /blog
-  - title: projects
-    url: /projects
-  - title: about
-    url: /about
+author:
+  name:     "Oliver Ayers"
+  github:   "https://github.com/oliverandcode"
+  linkedin: "https://linkedin.com/in/oliver-ayers-090870a3"
+  email:    "oliverdayers@gmail.com"
 
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts" # previously `post` in Jekyll 2.2.
-    values:
-      layout: "post"
-      author: "Oliver Ayers"
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
+# ── Job title shown large on home page ───────────────
+job_title: "Software Engineer"
 
-plugins:
-  - jekyll-figure
+# ── Deploy ───────────────────────────────────────────
+baseurl: "" # leave empty for yourusername.github.io
+url:     "https://oliverandcode.github.io"
+
+# ── Blog ─────────────────────────────────────────────
+blog_headline: "The Poetical Science" # H1 shown on the blog index
+default_author: "Oliver Ayers" # used when a post omits `author:`
+
+# ── Pagination ───────────────────────────────────────
+paginate:      10
+paginate_path: "/blog/page:num/"
+
+# ── Build ────────────────────────────────────────────
+markdown:    kramdown
+highlighter: rouge
+permalink:   /blog/:year/:month/:day/:title/
+
+# IMPORTANT: Do NOT add jekyll-paginate or jekyll-seo-tag to the plugins
+# list below. The github-pages gem already activates them. Declaring them
+# a second time causes "stack level too deep" errors at build time.
+# Only add plugins here that are NOT already bundled by github-pages.
+# plugins:
+#   - some-other-plugin
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - "*.zip"
+  # begin explicitly excluding old files and directories
+  - _drafts/
+  - _includes_old/
+  - _layouts_old/
+  - _posts_old/
+  - assets_old
+  - _config_old.yml
+  - about.md
+  - blog.html
+  - favicon.png
+  - favicon2.png
+  - Gemfile_old
+  - index_old.md

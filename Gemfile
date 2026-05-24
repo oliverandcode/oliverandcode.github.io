@@ -1,14 +1,6 @@
-# frozen_string_literal: true
-
 source "https://rubygems.org"
 
-gem "jekyll"
-
-group :jekyll_plugins do
-  gem "jekyll-feed"
-  gem "jekyll-seo-tag"
-  gem 'jekyll-figure'
-end
-
-# This gem includes Jekyll and all supported plugins for GitHub Pages
+# github-pages bundles Jekyll, jekyll-paginate, jekyll-seo-tag,
+# and everything else GitHub Pages supports. Don't add those gems
+# separately — duplicate registration causes stack overflow errors.
 gem "github-pages", group: :jekyll_plugins
