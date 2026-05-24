@@ -34,7 +34,8 @@ job_title: "Software Engineer"
 
 # ── Deploy ───────────────────────────────────────────
 baseurl: "" # leave empty for yourusername.github.io
-url:     "https://oliverandcode.github.io"
+# url:     "https://oliverandcode.github.io"
+url: http://www.oliverandcode.com/
 
 # ── Blog ─────────────────────────────────────────────
 blog_headline: "The Poetical Science" # H1 shown on the blog index
