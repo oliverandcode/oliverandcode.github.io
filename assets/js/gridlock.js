@@ -13,6 +13,8 @@
 //    len     = number of cells (h=wide, v=tall)
 // =====================================================
 
+// TODO: BUGFIX: known bug, fix game, the tiles don't move according to the logic of the rules
+
 (function () {
 
   // ── Puzzle definitions ───────────────────────────────
