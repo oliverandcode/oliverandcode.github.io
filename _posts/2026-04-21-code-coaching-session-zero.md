@@ -4,9 +4,9 @@ title: "Code Coaching: Session 0"
 date: 2026-05-25
 excerpt: "I recently started coaching a friend of mine on learning Python."
 categories:
-  - learning
+  - learning-to-code
   - mentorship
-  - Python
+  - python
 ---
 
 I recently started coaching a friend of mine on learning Python. She's done some online learning already and understands basic syntax, but she wants to connect the dots between that and the kind of project she's likely to do at work, as a data analyst in the nonprofit sector.

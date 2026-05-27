@@ -5,23 +5,24 @@
 #  label: displayed in the UI
 # =====================================================
 
-- slug: python
-  label: Python
+- slug: learning-to-code
+  label: Learning to Code
 
 - slug: mentorship
   label: Mentorship
 
-- slug: learning-to-code
-  label: Learning to Code
+- slug: python
+  label: Python
+
+# not yet used
+- slug: poetical-science
+  label: History of Computing
 
 - slug: self-reference
   label: This Website
 
 - slug: weird-art
   label: Creative Projects
-
-- slug: poetical-science
-  label: History of Computing
 
 # pre-filled categories (might or might not use)
 - slug: engineering
