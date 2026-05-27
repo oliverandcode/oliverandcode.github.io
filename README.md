@@ -17,6 +17,7 @@ Built with Jekyll so GitHub Pages renders it automatically — no build step, no
 │
 ├── _includes/
 │   ├── head.html            ← <head> contents (meta, CSS, SEO)
+│   ├── header.html          ← site header with title and tagline
 │   ├── navbar.html          ← site navigation
 │   ├── footer.html          ← site footer
 │   ├── scripts.html         ← JS loaded before </body>
