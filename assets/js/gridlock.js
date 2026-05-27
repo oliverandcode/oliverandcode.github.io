@@ -13,8 +13,6 @@
 //    len     = number of cells (h=wide, v=tall)
 // =====================================================
 
-// TODO: BUGFIX: known bug, fix game, the tiles don't move according to the logic of the rules
-
 (function () {
 
   // ── Puzzle definitions ───────────────────────────────
@@ -23,7 +21,7 @@
     {
       name: "Easy Street",
       pieces: [
-        { id:'worker', emoji:'👷', type:'worker', col:0, row:2, len:2 },
+        { id:'worker', emoji:'👷', type:'worker', col:0, row:1, len:2 },
         { id:'p1',     emoji:'🚜', type:'v',      col:2, row:0, len:3 },
         { id:'p2',     emoji:'🧱', type:'h',      col:3, row:2, len:2 },
         { id:'p3',     emoji:'⚙️', type:'v',      col:4, row:3, len:2 },
@@ -33,19 +31,19 @@
     {
       name: "Foreman's Nightmare",
       pieces: [
-        { id:'worker', emoji:'👷', type:'worker', col:0, row:2, len:2 },
+        { id:'worker', emoji:'👷', type:'worker', col:0, row:1, len:2 },
         { id:'p1',     emoji:'🚜', type:'v',      col:2, row:0, len:2 },
         { id:'p2',     emoji:'🧱', type:'h',      col:3, row:2, len:3 },
         { id:'p3',     emoji:'⚙️', type:'v',      col:2, row:2, len:3 },
         { id:'p4',     emoji:'🛠️', type:'h',      col:0, row:4, len:2 },
         { id:'p5',     emoji:'🦺', type:'v',      col:4, row:0, len:3 },
-        { id:'p6',     emoji:'🏗️', type:'h',      col:1, row:1, len:2 },
+        { id:'p6',     emoji:'🏗️', type:'h',      col:1, row:0, len:2 },
       ]
     },
     {
       name: "Rush Hour",
       pieces: [
-        { id:'worker', emoji:'👷', type:'worker', col:0, row:2, len:2 },
+        { id:'worker', emoji:'👷', type:'worker', col:0, row:1, len:2 },
         { id:'p1',     emoji:'🚜', type:'h',      col:2, row:0, len:2 },
         { id:'p2',     emoji:'🧱', type:'v',      col:3, row:0, len:3 },
         { id:'p3',     emoji:'⚙️', type:'h',      col:3, row:2, len:2 },
