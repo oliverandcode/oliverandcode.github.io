@@ -28,12 +28,16 @@ $terra-dark:  #9E5535;
 $terra-pale:  #F5E9E3;
 
 // ── Typography ───────────────────────────────────────
-// Jost everywhere. Code falls back to browser default monospace.
-$font-sans: 'Jost', system-ui, sans-serif;
+$font-body:    'Jost', system-ui, sans-serif;   // body text, blog posts, etc.
+$font-title:   'Nunito', system-ui, sans-serif;   // site title in header
+$font-tagline: 'DM Mono', monospace;               // site tagline in header
+$font-nav:     'Jost', system-ui, sans-serif;   // nav links
+$font-ui:      'Jost', system-ui, sans-serif;   // buttons, labels, tags, meta
+$font-display: 'Outfit', system-ui, sans-serif;    // reserved — not yet assigned
 
 // ── Layout ───────────────────────────────────────────
-$max-width:      880px;
-$chrome-height:  60px;   // header / nav bar height
+$max-width:      980px;
+$chrome-height:  300px;   // total header height
 $radius:         2px;
 
 // ── Breakpoints ──────────────────────────────────────

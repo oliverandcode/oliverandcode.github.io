@@ -1,8 +1,12 @@
 // =====================================================
 //  NAV / HEADER CHROME
+//
 //  Dark walnut bar — visually distinct from page content.
+//
 //  Nav links show icon + label when space allows;
 //  icon only on narrow viewports.
+//
+//  Single row: site identity (left) + nav links (right)
 // =====================================================
 
 .site-header {
@@ -16,57 +20,67 @@
 .header-inner {
   max-width: $max-width;
   margin: 0 auto;
-  padding: 0 28px;
-  height: $chrome-height;
+  padding: 0 20px;                 // top-bottom left-right
+  height: 150px;                   // overall bar height
   display: flex;
-  align-items: center;
+  align-items: last baseline;      // controls vertical height of identity block AND navbar
   justify-content: space-between;
-  gap: 24px;
+  gap: 20px;                       // space between title block and nav links
 }
+
+// ── Site identity (left) ─────────────────────────────
 
 // Site title + tagline block
 .site-identity {
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  gap: 20px;
   flex-shrink: 0;
   text-decoration: none;
+  padding-bottom: 20px;
 }
 
 .site-title {
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: .04em;
+  font-family: $font-title;
+  font-size: 64px;        // title font size
+  font-weight: 300;
+  letter-spacing: -.01em;
   color: $chrome-text-hi;
   line-height: 1;
 }
 
 .site-tagline {
-  font-size: 9px;
-  font-weight: 400;
-  letter-spacing: .14em;
-  text-transform: uppercase;
+  font-family: $font-tagline;
+  font-size: 24px;        // tagline font size
+  font-weight: 500;
+  letter-spacing: .30em;
+  text-transform: lowercase;
   color: $terra;
   line-height: 1;
 }
 
-// Nav links
+// ── Nav links (right) ────────────────────────────────
+
 .nav-links {
+  align-self: flex-end;   // controls vertical height of navbar within header
+  padding-bottom: 5px;    // adjusts vertical height from bottom
   display: flex;
-  gap: 4px;
+  gap: 4px;               // spacing between nav link pills
   list-style: none;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .nav-links a {
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 6px 12px;
-  font-size: 10px;
+  gap: 7px;               // spacing between icon and label within a link
+  padding: 6px 14px;
+  font-family: $font-nav;
+  font-size: 16px;        // nav label font size
   font-weight: 500;
-  letter-spacing: .14em;
-  text-transform: uppercase;
+  letter-spacing: .12em;
+  text-transform: lowercase;
   color: $chrome-text;
   border-radius: $radius;
   transition: color .2s, background .2s;
@@ -75,10 +89,10 @@
 
   // Icon — always present
   .nav-icon {
-    width: 16px;
-    height: 16px;
+    width: 20px;          // nav icon size (keep width = height)
+    height: 20px;
     flex-shrink: 0;
-    opacity: .7;
+    opacity: .65;
     transition: opacity .2s;
   }
 
@@ -90,11 +104,10 @@
     background: rgba(255,255,255,.07);
     .nav-icon { opacity: 1; }
   }
-
-  &.active { color: $chrome-text-hi; }
 }
 
-// Mobile hamburger
+// ── Mobile hamburger ──────────────────────────────────
+
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -106,7 +119,8 @@
 
   span {
     display: block;
-    width: 20px; height: 1.5px;
+    width: 20px;
+    height: 1.5px;
     background: $chrome-text;
     transition: .2s;
   }
@@ -115,7 +129,7 @@
 // ── Responsive ───────────────────────────────────────
 
 // Mid — icon + label still fits, but reduce padding
-@media (max-width: 520px) {
+@media (max-width: 560px) {
   .nav-links a {
     padding: 6px 8px;
     .nav-label { display: none; }     // icon only
@@ -123,6 +137,16 @@
 }
 
 @media (max-width: $bp-mobile) {
+  .header-inner { height: 64px; gap: 16px; }
+  .site-title   { 
+    font-family: $font-title;
+    font-size: 26px;
+   }
+  .site-tagline { 
+    font-family: $font-tagline;
+    font-size: 10px;
+   }
+
   .nav-toggle { display: flex; }
 
   .nav-links {
@@ -130,7 +154,8 @@
     flex-direction: column;
     gap: 0;
     position: absolute;
-    top: $chrome-height; left: 0; right: 0;
+    top: $chrome-height;
+    left: 0; right: 0;
     background: $chrome-bg;
     border-bottom: 1px solid $chrome-border;
     padding: 8px 16px 16px;
