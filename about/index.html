@@ -9,9 +9,11 @@ permalink: /about/
 
     <!-- ── Left: bio + pro links ─────────────────── -->
     <div>
-      <div class="eyebrow" style="margin-bottom:14px;">About</div>
+      <div class="eyebrow">About</div>
       <h1 class="about-name">{{ site.author.name }}</h1>
-
+      <div style="margin-bottom:32px;">
+        {% include pro-links.html %}
+      </div>
       <div class="about-body">
         <!--
           BIO — edit the paragraphs below.
@@ -82,9 +84,6 @@ permalink: /about/
         </p>
       </div>
 
-      <div style="margin-top:32px;">
-        {% include pro-links.html %}
-      </div>
     </div>
 
     <!-- ── Right: photos ─────────────────────────── -->

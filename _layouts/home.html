@@ -8,16 +8,14 @@ layout: default
 
       <!-- Left: text -->
       <div>
-        <div class="hero-eyebrow fade-up">{{ site.job_title }}</div>
+        <div class="hero-eyebrow fade-up">{{ site.home_eyebrow }}</div>
         <h1 class="hero-name fade-up fade-up-1">{{ site.author.name }}</h1>
 
-        <!-- NOTE: <br /> is a hacky way to add space around professional links TODO: please adjust class style instead -->
-        <!-- <br />
-        <div class="fade-up fade-up-3">
+        <!-- <div class="fade-up fade-up-3">
           {% include pro-links.html %}
-        </div>
-        <br />  -->
-        <!-- <p class="hero-jobtitle fade-up fade-up-1">{{ site.author.job_title }}</p> -->
+        </div> -->
+
+        <p class="hero-jobtitle fade-up fade-up-1">{{ site.author.job_title }}</p>
 
         <div class="hero-bio fade-up fade-up-2">{{ content }}</div>
 

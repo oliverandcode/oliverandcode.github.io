@@ -9,12 +9,14 @@ title:       "Oliver & Co(de)" # site name
 tagline:     "code + commentary + curiosity" # 3–5 words shown in the header
 description: "A software engineer's notes on building things." # NOTE: where does this display? it's referenced in _includes/head.html
 logo: assets/img/oliverandcode-logo.png # NOTE: currently unused but might come in handy
+home_eyebrow: "Welcome"
 
 author:
   name:     "Oliver Ayers"
   github:   "https://github.com/oliverandcode"
   linkedin: "https://linkedin.com/in/oliver-ayers-090870a3"
   email:    "oliverandcode@gmail.com"
+  job_title: "Software Engineer"
 
 about_photo:
   alt_text: "An orange cat at his computer"
