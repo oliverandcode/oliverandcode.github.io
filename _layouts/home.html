@@ -10,13 +10,17 @@ layout: default
       <div>
         <div class="hero-eyebrow fade-up">{{ site.job_title }}</div>
         <h1 class="hero-name fade-up fade-up-1">{{ site.author.name }}</h1>
-        <p class="hero-jobtitle fade-up fade-up-1">{{ site.job_title }}</p>
 
-        <div class="hero-bio fade-up fade-up-2">{{ content }}</div>
-
+        <!-- NOTE: <br /> is a hacky way to add space around professional links TODO: please adjust class style instead -->
+        <!-- <br />
         <div class="fade-up fade-up-3">
           {% include pro-links.html %}
         </div>
+        <br />  -->
+        <!-- <p class="hero-jobtitle fade-up fade-up-1">{{ site.author.job_title }}</p> -->
+
+        <div class="hero-bio fade-up fade-up-2">{{ content }}</div>
+
       </div>
 
       <!-- Right: photo -->
@@ -31,6 +35,9 @@ layout: default
         <p class="photo-caption">
           {{ site.about_photo.caption }}
         </p>
+        <div class="fade-up fade-up-3">
+          {% include pro-links.html layout="vertical" %}
+        </div>
       </div>
 
     </div>
