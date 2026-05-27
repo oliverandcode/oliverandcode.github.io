@@ -25,23 +25,23 @@
   label: Creative Projects
 
 # pre-filled categories (might or might not use)
-- slug: engineering
-  label: Engineering
-
-- slug: tools
-  label: Tools & Workflow
-
-- slug: writing
-  label: Technical Writing
-
-- slug: web
-  label: Web & CSS
+- slug: career
+  label: Career
 
 - slug: databases
   label: Databases
 
-- slug: career
-  label: Career
+- slug: engineering
+  label: Engineering
 
 - slug: open-source
   label: Open Source
+
+- slug: tools
+  label: Tools & Workflow
+
+- slug: web
+  label: Web & CSS
+
+- slug: writing
+  label: Technical Writing
