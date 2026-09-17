@@ -65,16 +65,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - "*.zip"
-  # begin explicitly excluding old files and directories
+  # exclude unused files
   - _drafts/
-  - _includes_old/
-  - _layouts_old/
   - _posts_old/
-  - assets_old
-  - _config_old.yml
-  - about.md
-  - blog.html
   - favicon.png
   - favicon2.png
-  - Gemfile_old
-  - index_old.md
