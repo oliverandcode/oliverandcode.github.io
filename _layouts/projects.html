@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<div class="container">
+
+  <div class="construction-wrap">
+    <div class="construction-badge">🚧 Under Construction 🚧</div>
+    <h1 class="construction-headline">
+      Please wear a hard hat!
+    </h1>
+    <p class="construction-sub">
+      Thank you for your patience while I build — projects are on their way.<br>
+      In the meantime, enjoy the game below. 👷
+    </p>
+    <div class="construction-emojis" aria-hidden="true">
+      🏗️ &nbsp; 🛠️ &nbsp; 🦺 &nbsp; ⚙️ &nbsp; 🧱
+    </div>
+  </div>
+
+  <div class="game-section">
+    <div class="game-intro">
+      <h2 class="game-title">🚜 Construction Site Escape</h2>
+      <p class="game-sub">
+        Slide the equipment out of the way so the worker 👷 can escape through the exit →
+      </p>
+    </div>
+
+    <p class="game-status" id="gl-status">Slide pieces to clear the path!</p>
+
+    <div style="position:relative;width:360px;margin:0 auto;">
+      <div class="gridlock-board" id="gl-board"></div>
+      <div class="gridlock-exit" aria-hidden="true">🚪</div>
+    </div>
+
+    <div class="game-controls" style="margin-top:20px;">
+      <button class="btn btn--primary" id="gl-reset">New Puzzle</button>
+      <button class="btn" id="gl-hint">Hint 💡</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="{{ '/assets/js/gridlock.js' | relative_url }}"></script>

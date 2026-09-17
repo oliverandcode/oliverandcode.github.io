@@ -1,9 +1,9 @@
-<div id="footer_wrap" class="outer">
-    <footer class="inner">
-        {% if site.github.is_project_page %}
-        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-    </footer>
-</div>
-
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-author">
+      &copy; {{ 'now' | date: "%Y" }}
+      <a href="{{ site.author.github }}" target="_blank" rel="noopener">{{ site.author.name }}</a>
+    </p>
+    <p class="footer-copy">{{ site.title }}</p>
+  </div>
+</footer>

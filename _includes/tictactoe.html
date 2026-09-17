@@ -1,0 +1,33 @@
+<!--
+  Tic-Tac-Toe game component.
+  Included on the projects page via: {% include tictactoe.html %}
+  Game logic lives in: assets/js/tictactoe.js
+  X = matcha green  |  O = terra cotta
+-->
+
+<div class="ttt-wrap">
+
+  <div class="tag ttt-label">A gift for your patience</div>
+
+  <h2 class="ttt-heading">Tic-Tac-Toe</h2>
+  <p class="ttt-sub">Two players, one screen, zero excuses.</p>
+
+  <p class="ttt-status" id="ttt-status">
+    <strong>X</strong>'s turn
+  </p>
+
+  <div class="ttt-board" id="ttt-board">
+    <div class="ttt-cell" data-index="0"></div>
+    <div class="ttt-cell" data-index="1"></div>
+    <div class="ttt-cell" data-index="2"></div>
+    <div class="ttt-cell" data-index="3"></div>
+    <div class="ttt-cell" data-index="4"></div>
+    <div class="ttt-cell" data-index="5"></div>
+    <div class="ttt-cell" data-index="6"></div>
+    <div class="ttt-cell" data-index="7"></div>
+    <div class="ttt-cell" data-index="8"></div>
+  </div>
+
+  <button class="btn" id="ttt-reset">New Game</button>
+
+</div>

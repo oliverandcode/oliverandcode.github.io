@@ -1,0 +1,162 @@
+// =====================================================
+//  PROJECTS PAGE  —  under construction + gridlock game
+// =====================================================
+
+.construction-wrap {
+  padding: 64px 0;
+  text-align: center;
+  border-bottom: 1px solid $cream-3;
+  margin-bottom: 56px;
+}
+
+.construction-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: $terra-pale;
+  border: 1px solid $terra;
+  color: $terra-dark;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: $radius;
+  margin-bottom: 20px;
+}
+
+.construction-headline {
+  font-size: clamp(32px, 6vw, 60px);
+  font-weight: 300;
+  letter-spacing: -.02em;
+  color: $ink;
+  line-height: 1.05;
+  margin-bottom: 12px;
+}
+
+.construction-sub {
+  font-size: 15px;
+  font-weight: 300;
+  color: $ink-mid;
+  max-width: 480px;
+  margin: 0 auto 36px;
+  line-height: 1.7;
+}
+
+.construction-emojis {
+  font-size: 28px;
+  letter-spacing: .15em;
+  margin-bottom: 4px;
+}
+
+// ── Gridlock game ─────────────────────────────────────
+
+.game-section {
+  padding-bottom: 80px;
+}
+
+.game-intro {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.game-title {
+  font-size: 22px;
+  font-weight: 400;
+  color: $ink;
+  margin-bottom: 6px;
+}
+
+.game-sub {
+  font-size: 13px;
+  font-weight: 300;
+  color: $ink-mid;
+}
+
+.game-status {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: .08em;
+  color: $ink-light;
+  min-height: 20px;
+  margin-bottom: 14px;
+
+  &.win  { color: $matcha-dark; }
+  &.hint { color: $terra; }
+}
+
+.gridlock-board {
+  position: relative;
+  width: 360px;
+  height: 360px;
+  margin: 0 auto 20px;
+  background: $cream-2;
+  border: 2px solid $cream-3;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 4px rgba(0,0,0,.06);
+  touch-action: none;
+}
+
+// Grid lines
+.gridlock-board::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, $cream-3 1px, transparent 1px),
+    linear-gradient(to bottom, $cream-3 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+}
+
+.gl-piece {
+  position: absolute;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: grab;
+  user-select: none;
+  transition: box-shadow .15s;
+  box-shadow: 0 2px 6px rgba(0,0,0,.12);
+
+  &:active { cursor: grabbing; box-shadow: 0 4px 12px rgba(0,0,0,.18); }
+
+  // Worker (goal piece) — matcha
+  &.piece--worker {
+    background: $matcha-pale;
+    border: 2px solid $matcha;
+  }
+
+  // Horizontal blockers — terra pale
+  &.piece--h {
+    background: $terra-pale;
+    border: 2px solid $terra;
+  }
+
+  // Vertical blockers — cream-2
+  &.piece--v {
+    background: $cream;
+    border: 2px solid $cream-3;
+  }
+}
+
+// Exit marker on right side
+.gridlock-exit {
+  position: absolute;
+  right: -28px;
+  top: calc(1 * 60px + 6px); // row 1 (0-indexed), vertically centered on row
+  height: 48px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.game-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}

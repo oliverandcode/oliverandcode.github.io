@@ -1,0 +1,23 @@
+<a class="blog-card" href="{{ include.post.url | relative_url }}">
+  <div class="blog-card__date">{{ include.post.date | date: "%B %-d, %Y" }}</div>
+  <div class="blog-card__title">{{ include.post.title }}</div>
+  <div class="blog-card__preview">
+    {{ include.post.excerpt | strip_html | truncatewords: 30 }}
+  </div>
+  <div class="blog-card__footer">
+    <div class="blog-card__filed">
+      {% if include.post.categories and include.post.categories != empty %}
+        Filed under:
+        {% for cat_slug in include.post.categories %}
+          {% assign cat = site.data.categories | where: "slug", cat_slug | first %}
+          {% if cat %}
+            <a class="blog-card__cat-link"
+               href="{{ '/blog/category/' | append: cat_slug | append: '/' | relative_url }}"
+               onclick="event.stopPropagation()">{{ cat.label }}</a>{% unless forloop.last %},{% endunless %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    </div>
+    <span class="blog-card__cta">Read →</span>
+  </div>
+</a>

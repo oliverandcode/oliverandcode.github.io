@@ -1,0 +1,45 @@
+// =====================================================
+//  FOOTER  —  same dark chrome as the header
+// =====================================================
+
+.site-footer {
+  background: $chrome-bg;
+  border-top: 1px solid $chrome-border;
+  padding: 28px 0;
+}
+
+.footer-inner {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+
+  @media (max-width: $bp-mobile) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+.footer-author {
+  font-size: 12px;
+  font-weight: 400;
+  color: $chrome-text;
+
+  a {
+    color: $chrome-text-hi;
+    border-bottom: 1px solid transparent;
+    transition: border-color .2s;
+    &:hover { border-color: $matcha; }
+  }
+}
+
+.footer-copy {
+  font-size: 11px;
+  color: $chrome-border;
+  letter-spacing: .04em;
+}

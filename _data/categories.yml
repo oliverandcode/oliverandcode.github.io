@@ -1,0 +1,47 @@
+# =====================================================
+#  CATEGORY REGISTRY
+#  Add a new category here before using it in a post.
+#  slug:  used in URLs and post front matter
+#  label: displayed in the UI
+# =====================================================
+
+- slug: learning-to-code
+  label: Learning to Code
+
+- slug: mentorship
+  label: Mentorship
+
+- slug: python
+  label: Python
+
+# not yet used
+- slug: poetical-science
+  label: History of Computing
+
+- slug: self-reference
+  label: This Website
+
+- slug: weird-art
+  label: Creative Projects
+
+# pre-filled categories (might or might not use)
+- slug: career
+  label: Career
+
+- slug: databases
+  label: Databases
+
+- slug: engineering
+  label: Engineering
+
+- slug: open-source
+  label: Open Source
+
+- slug: tools
+  label: Tools & Workflow
+
+- slug: web
+  label: Web & CSS
+
+- slug: writing
+  label: Technical Writing
