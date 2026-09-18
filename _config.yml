@@ -62,6 +62,7 @@ permalink:   /blog/:year/:month/:day/:title/
 
 exclude:
   - README.md
+  - vendor/
   - Gemfile
   - Gemfile.lock
   - "*.zip"
