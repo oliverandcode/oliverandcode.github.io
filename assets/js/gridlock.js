@@ -38,13 +38,18 @@
     {
       name: "Rush Hour", // difficulty: medium
       pieces: [
-        { id:'worker', emoji:'👷', type:'worker', col:0, row:2, len:2 },
-        { id:'p1',     emoji:'🚜', type:'v',      col:2, row:0, len:2 },
-        { id:'p2',     emoji:'🧱', type:'h',      col:3, row:2, len:3 },
-        { id:'p3',     emoji:'⚙️', type:'v',      col:2, row:2, len:3 },
-        { id:'p4',     emoji:'🛠️', type:'h',      col:0, row:4, len:2 },
-        { id:'p5',     emoji:'🦺', type:'v',      col:4, row:0, len:3 },
-        { id:'p6',     emoji:'🏗️', type:'h',      col:1, row:0, len:2 },
+        { id:'worker', emoji:'👷', type:'worker', col:1, row:2, len:2 },
+        { id:'p1',     emoji:'🚜', type:'v',      col:0, row:0, len:3 }, // long vertical piece behind worker
+        { id:'p2',     emoji:'🧱', type:'v',      col:2, row:0, len:2 }, // short vertical piece above worker
+        { id:'p3',     emoji:'⚙️', type:'v',      col:3, row:2, len:2 }, // short vertical piece in front of worker
+        { id:'p4',     emoji:'🔨', type:'v',      col:4, row:1, len:2 }, // short vertical piece
+        { id:'p5',     emoji:'🦺', type:'v',      col:5, row:2, len:2 }, // short vertical piece blocking exit
+        { id:'p6',     emoji:'🗜️', type:'h',      col:3, row:0, len:2 }, // short horizontal piece up top
+        { id:'p7',     emoji:'🔩', type:'h',      col:0, row:3, len:2 }, // short horizontal piece next to worker
+        { id:'p8',     emoji:'🔧', type:'h',      col:1, row:4, len:2 }, // short horizontal piece
+        { id:'p9',     emoji:'🏗️', type:'h',      col:3, row:4, len:3 }, // long horizontal piece
+        { id:'p10',    emoji:'🚜', type:'h',      col:0, row:5, len:3 }, // long horizontal piece bottom row
+        { id:'p11',    emoji:'🪚', type:'h',      col:3, row:5, len:2 }, // short horizontal piece bottom row
       ]
     },
     {
