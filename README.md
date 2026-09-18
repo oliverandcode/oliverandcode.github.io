@@ -83,7 +83,7 @@ Requires Ruby ≥ 3.0. If you don't have it: `brew install ruby` on macOS.
 
 ---
 
-## + TODO: Update blog
+## ✦ TODO: Update blog
 Create a file in `_posts/` named `YYYY-MM-DD-your-slug.md`:
 
 ```markdown
@@ -103,7 +103,7 @@ NOTE: Considering Obsidian notebook for blog post updates.
 
 ---
 
-## + TODO: Replace cover photo
+## ✦ TODO: Replace cover photo
 Replace `assets/img/placeholder.jpg` with an actual professional headshot (keep the filename, or update the `<img src>` in `index.html`).
 
 ---
