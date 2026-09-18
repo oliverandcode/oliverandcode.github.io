@@ -55,14 +55,19 @@
     {
       name: "Foreman's Nightmare", // difficulty: hard
       pieces: [
-        { id:'worker', emoji:'👷', type:'worker', col:0, row:2, len:2 },
-        { id:'p1',     emoji:'🚜', type:'h',      col:2, row:0, len:2 },
-        { id:'p2',     emoji:'🧱', type:'v',      col:3, row:0, len:3 },
-        { id:'p3',     emoji:'⚙️', type:'h',      col:3, row:2, len:2 },
-        { id:'p4',     emoji:'🛠️', type:'v',      col:2, row:2, len:2 },
-        { id:'p5',     emoji:'🦺', type:'h',      col:0, row:5, len:3 },
-        { id:'p6',     emoji:'🏗️', type:'v',      col:5, row:1, len:3 },
-        { id:'p7',     emoji:'🧰', type:'h',      col:1, row:3, len:2 },
+        { id:'worker', emoji:'👷', type:'worker', col:1, row:2, len:2 },
+        { id:'p1',     emoji:'🚜', type:'v',      col:0, row:3, len:3 }, // long vertical piece bottom left
+        { id:'p2',     emoji:'🦺', type:'v',      col:1, row:4, len:2 }, // short vertical piece
+        { id:'p3',     emoji:'⚙️', type:'v',      col:2, row:4, len:2 }, // short vertical piece
+        { id:'p4',     emoji:'🔨', type:'v',      col:3, row:1, len:2 }, // short vertical piece in front of worker
+        { id:'p5',     emoji:'🏗️', type:'v',      col:4, row:2, len:3 }, // long vertical piece
+        { id:'p6',     emoji:'🧱', type:'v',      col:5, row:2, len:2 }, // short vertical piece blocking exit
+        { id:'p7',     emoji:'🧰', type:'v',      col:5, row:4, len:2 }, // short vertical piece
+        { id:'p8',     emoji:'🚜', type:'h',      col:0, row:0, len:3 }, // long horizontal piece top left
+        { id:'p9',     emoji:'🗜️', type:'h',      col:3, row:0, len:2 }, // short horizontal piece top row
+        { id:'p10',    emoji:'🏗️', type:'h',      col:0, row:1, len:3 }, // long horizontal piece next to worker
+        { id:'p11',    emoji:'🪚', type:'h',      col:1, row:3, len:2 }, // short horizontal piece next to worker
+        { id:'p12',    emoji:'🔧', type:'h',      col:3, row:5, len:2 }, // short horizontal piece bottom row
       ]
     }
   ];
