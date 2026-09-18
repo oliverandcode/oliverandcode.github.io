@@ -74,7 +74,7 @@
 
   const CELL  = 60;
   const GRID  = 6;
-  const EXIT_ROW = 2;   // the worker must exit from this row
+  // const EXIT_ROW = 2;   // the worker must exit from this row // NOTE: unused
 
   let state  = [];      // current piece positions {id, col, row, ...rest}
   let puzzle = null;
@@ -234,6 +234,9 @@
 
   // ── Hint ─────────────────────────────────────────────
 
+  // TODO: BUG: These hints are not actually helpful at this time!
+  // They just tell you which piece is very obviously in your way.
+
   function hint() {
     const worker = state.find(p => p.id === 'worker');
     // Find the first blocker to the right of the worker
@@ -247,7 +250,7 @@
     } else {
       const blockerId = grid[worker.row][blockerCol];
       const blocker   = state.find(p => p.id === blockerId);
-      statusEl.textContent = `Hint: Move the ${blocker.emoji} out of row ${worker.row + 1} first.`; // TODO: fix this lol. AI bullshit, completely nonsensical, not how the game works
+      statusEl.textContent = `Hint: Move the ${blocker.emoji} out of row ${worker.row + 1} first.`;
     }
     statusEl.className = 'game-status hint';
   }
