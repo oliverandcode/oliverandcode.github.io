@@ -147,7 +147,7 @@
 .gridlock-exit {
   position: absolute;
   right: -28px;
-  top: calc(1 * 60px + 6px); // row 1 (0-indexed), vertically centered on row
+  top: calc(2 * 60px + 6px); // row 1 (0-indexed), vertically centered on row
   height: 48px;
   display: flex;
   align-items: center;
