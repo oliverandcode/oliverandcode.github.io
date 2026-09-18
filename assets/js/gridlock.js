@@ -19,7 +19,8 @@
   // Add more puzzles here — they'll be picked at random.
   const PUZZLES = [
     {
-      name: "Easy Street", // difficulty: easy
+      name: "Easy Street",
+      difficulty: "easy",
       pieces: [
         { id:'worker', emoji:'👷', type:'worker', col:0, row:2, len:2, size: 'worker' },
         { id:'p1',     emoji:'🗜️', type:'v',      col:5, row:0, len:2, size: 'short' }, // short vertical piece at top right
@@ -36,7 +37,8 @@
       ]
     },
     {
-      name: "Rush Hour", // difficulty: medium
+      name: "Rush Hour",
+      difficulty: "medium",
       pieces: [
         { id:'worker', emoji:'👷', type:'worker', col:1, row:2, len:2, size: 'worker' },
         { id:'p1',     emoji:'🚜', type:'v',      col:0, row:0, len:3, size: 'long' }, // long vertical piece behind worker
@@ -53,7 +55,8 @@
       ]
     },
     {
-      name: "Foreman's Nightmare", // difficulty: hard
+      name: "Foreman's Nightmare",
+      difficulty: "hard",
       pieces: [
         { id:'worker', emoji:'👷', type:'worker', col:1, row:2, len:2, size: 'worker' },
         { id:'p1',     emoji:'🚜', type:'v',      col:0, row:3, len:3, size: 'long' }, // long vertical piece bottom left
@@ -222,7 +225,7 @@
     puzzle = p;
     // Deep copy piece positions into state
     state = p.pieces.map(pc => Object.assign({}, pc));
-    statusEl.textContent = p.name + ' — slide the 👷 to the exit →';
+    statusEl.textContent = p.name + ' (difficulty: ' + p.difficulty + ')';
     statusEl.className = 'game-status';
     render();
   }
