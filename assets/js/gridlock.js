@@ -19,7 +19,7 @@
   // Add more puzzles here — they'll be picked at random.
   const PUZZLES = [
     {
-      name: "Easy Street",
+      name: "Easy Street", // difficulty: easy
       pieces: [
         { id:'worker', emoji:'👷', type:'worker', col:0, row:2, len:2 },
         { id:'p1',     emoji:'🗜️', type:'v',      col:5, row:0, len:2 }, // short vertical piece at top right
@@ -36,7 +36,7 @@
       ]
     },
     {
-      name: "Foreman's Nightmare",
+      name: "Rush Hour", // difficulty: medium
       pieces: [
         { id:'worker', emoji:'👷', type:'worker', col:0, row:2, len:2 },
         { id:'p1',     emoji:'🚜', type:'v',      col:2, row:0, len:2 },
@@ -48,7 +48,7 @@
       ]
     },
     {
-      name: "Rush Hour",
+      name: "Foreman's Nightmare", // difficulty: hard
       pieces: [
         { id:'worker', emoji:'👷', type:'worker', col:0, row:2, len:2 },
         { id:'p1',     emoji:'🚜', type:'h',      col:2, row:0, len:2 },
