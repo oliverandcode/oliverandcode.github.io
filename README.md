@@ -90,18 +90,6 @@ Requires Ruby ≥ 3.0. If you don't have it: `brew install ruby` on macOS.
 
 ## ✦ Common customizations
 
-### Your name, bio, and social links
-Edit `_config.yml` — all site-wide settings live here:
-
-```yaml
-title:    "Jane Smith"
-tagline:  "Software Engineer"
-
-author:
-  github:   "https://github.com/janesmith"
-  linkedin: "https://linkedin.com/in/janesmith"
-```
-
 ### Add a blog post
 Create a file in `_posts/` named `YYYY-MM-DD-your-slug.md`:
 
@@ -121,13 +109,7 @@ That's it — Jekyll picks it up automatically.
 ### Replace your profile photo
 Swap out `assets/img/placeholder.jpg` with your own image (keep the filename, or update the `<img src>` in `index.html`).
 
-### Add a custom domain
-1. Buy a domain (Namecheap, Cloudflare, etc.)
-2. Repo → Settings → Pages → Custom domain → enter your domain
-3. Add a CNAME DNS record pointing `www` → `yourusername.github.io`
-4. GitHub auto-provisions SSL within minutes.
-
 ---
 
-## ✦ Adding real projects
+## ✦ Adding real projects // TODO
 When you're ready, replace the "Under Construction" content in `_layouts/projects.html` with your project cards. 
