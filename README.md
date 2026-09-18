@@ -1,8 +1,3 @@
-# Your Personal Website — Jekyll Edition
-
-A minimal, high-contrast personal site for software engineers.  
-Built with Jekyll so GitHub Pages renders it automatically — no build step, no CI needed.
-
 ## ✦ Project structure
 
 ```
@@ -88,9 +83,7 @@ Requires Ruby ≥ 3.0. If you don't have it: `brew install ruby` on macOS.
 
 ---
 
-## ✦ Common customizations
-
-### Add a blog post
+## TODO: Update blog
 Create a file in `_posts/` named `YYYY-MM-DD-your-slug.md`:
 
 ```markdown
@@ -104,12 +97,16 @@ excerpt: "One or two sentences shown in the blog card preview."
 Your post content here, written in **Markdown**.
 ```
 
-That's it — Jekyll picks it up automatically.
+Several blog posts ready to go, just not published here.
 
-### Replace your profile photo
-Swap out `assets/img/placeholder.jpg` with your own image (keep the filename, or update the `<img src>` in `index.html`).
+NOTE: Considering Obsidian notebook for blog post updates.
 
 ---
 
-## ✦ Adding real projects // TODO
-When you're ready, replace the "Under Construction" content in `_layouts/projects.html` with your project cards. 
+## TODO: Replace cover photo
+Replace `assets/img/placeholder.jpg` with an actual professional headshot (keep the filename, or update the `<img src>` in `index.html`).
+
+---
+
+## ✦ TODO: Add real projects
+Replace the "Under Construction" content in `_layouts/projects.html` with project cards. 
