@@ -13,10 +13,10 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: $terra-pale;
-  border: 1px solid $terra;
-  color: $terra-dark;
-  font-size: 11px;
+  background: $gridlock-orange-pale;
+  border: 1px solid $gridlock-orange;
+  color: $gridlock-orange-dark;
+  font-size: clamp(32px, 6vw, 54px);
   font-weight: 500;
   letter-spacing: .12em;
   text-transform: uppercase;
@@ -26,7 +26,7 @@
 }
 
 .construction-headline {
-  font-size: clamp(32px, 6vw, 60px);
+  font-size: clamp(28px, 6vw, 48px);
   font-weight: 300;
   letter-spacing: -.02em;
   color: $ink;
@@ -35,7 +35,7 @@
 }
 
 .construction-sub {
-  font-size: 15px;
+  font-size: clamp(12px, 6vw, 16px);
   font-weight: 300;
   color: $ink-mid;
   max-width: 480px;
@@ -124,22 +124,22 @@
 
   &:active { cursor: grabbing; box-shadow: 0 4px 12px rgba(0,0,0,.18); }
 
-  // Worker (goal piece) — matcha
+  // Worker (goal piece)
   &.piece--worker {
-    background: $matcha-pale;
-    border: 2px solid $matcha;
+    background: $gridlock-green-pale;
+    border: 2px solid $gridlock-green;
   }
 
-  // Horizontal blockers — terra pale
-  &.piece--h {
-    background: $terra-pale;
-    border: 2px solid $terra;
+  // Short blockers
+  &.piece--short {
+    background: $gridlock-yellow-pale;
+    border: 2px solid $gridlock-yellow;
   }
 
-  // Vertical blockers — cream-2
-  &.piece--v {
-    background: $cream;
-    border: 2px solid $cream-3;
+  // Long blockers
+  &.piece--long {
+    background: $gridlock-orange-pale;
+    border: 2px solid $gridlock-orange;
   }
 }
 
