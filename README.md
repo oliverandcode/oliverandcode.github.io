@@ -68,7 +68,7 @@ oliverandcode.github.io/
 │   └── workflows/                   ← GitHub workflows
 │       └── jekyll.md                ← deploy to GitHub Pages
 ├── .gitignore                       ← files excluded from git version control
-├── LICENSE                          ← GNU General Public License v3.0 # TODO: add this
+├── LICENSE                          ← GNU General Public License v3.0
 ├── favicon.ico                      ← default favicon
 ├── Gemfile                          ← manage external dependencies
 └── README.md                        ← project documentation
